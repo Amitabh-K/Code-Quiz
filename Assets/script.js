@@ -349,3 +349,29 @@ function getScores(){
 		}
 	}
 }
+
+//for randoming the question / locating the question /only one box could be checked
+initPage();
+var seq = random();
+var questionCount = 0;
+var count = 1;
+var tempCheck;
+var userScore = 0;
+var countTimer = 60;
+
+//press the button to begin the test
+btnStartQuiz.addEventListener("click", quizPage);
+
+//next button
+btnNextQuestion.addEventListener("click",function(e){
+	countTimer -= 10;
+	if(countTimer>0 && questionCount<9){
+		nextQuestion();		
+		initNext();
+	}
+	else{
+		userScoreDis.innerHTML = userScore;
+		ScorePage();
+		timerDisplay(0);
+	}
+});
