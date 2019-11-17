@@ -132,3 +132,23 @@ function questionSelect(number){
 		selection4:selection[3]
 	}
 }
+
+//to ensure only one box could be ticked at a time
+
+function checkBoxOne(e){
+	if(count){
+		tempCheck = e.target.id;;
+		count = 0;
+	}
+	else{
+		if(e.target.id !== tempCheck){
+			document.getElementById(tempCheck).checked = false;
+			e.target.checked = true;
+			tempCheck = e.target.id;
+		}
+		else{
+			document.getElementById(tempCheck).checked = false;
+			tempCheck = e.target.id;
+		}
+	}
+}
