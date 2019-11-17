@@ -11,10 +11,7 @@ var quizSet1 = {
 					var answer = answerSet1[num];
 					return answer;
 				},
-	special:function special(num){
-					var special = specialSet1[num];
-					return special;					
-	}
+	
 };
 
 var quizSet2 = {
@@ -29,11 +26,7 @@ var quizSet2 = {
 	answer:function answerSelect(num){
 					var answer = answerSet2[num];
 					return answer;
-				},
-	special:function special(num){
-					var special = specialSet2[num];
-					return special;					
-	}				
+				},					
 };
 
 
