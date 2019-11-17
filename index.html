@@ -11,29 +11,112 @@
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 </head>
  
+
+
+
+
 <body>
+        <div class="timer"><span>Time Left: <span><span id="timerCount">0</span> s
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col marginTop">
+                    <div class="card">
+                        <div class="row">
+                            <div class="card-header">
+                                <button class="btn-secondary col-sm-12 col-md-3" id="startYourQuiz">Online Quiz Page</button>
+                                <button class="btn-secondary col-sm-12 col-md-3" id="viewHighScores">View Highest Scores</button>									
+                            </div>
+                        </div>
+                        <div class="card-body  text-center" id="initial">
+                            <h2 class="card-title">Coding Quiz <span>Challenge</span></h2>
+                            <p class="card-text">
+                                Try to answer the questions within the time limit.
+                                <br>
+                                Keep in mind that incorrect answers will deduct time by ten seconds!
+                            </p>
+                            <select class="form-control form-control-sm" id="quizSetSelect">
+                                <option id="quizSet1">Quiz set 1</option>
+                                <option id="quizSet2">Quiz set 2</option>							
+                                <!-- <option id="quizSet4">Quiz set 4</option> -->
+                            </select>
+                            <button href="#" class="btn btn-primary" id="startQuiz">Start Quiz</button>
+                        </div>
     
+                        <div class="card-body  text-center" id="quizTest">
+                            <h2 class="card-title">Coding Quiz <span>Challenge</span></h2>
+                            <p class="card-text" id="questionDisp">
+                                Choose the answers!
+                            </p>
+                            <div id = "quesExtraDisp"></div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" class="boxChecked" id="boxCheckedBox1">
+                                    </div>
+                                </div>
+                                <span class="form-control boxChecked">A.<span id="selection1" class="boxChecked">Selection Content</span></span>
+                            </div>
     
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" class="boxChecked" id="boxCheckedBox2">
+                                    </div>
+                                </div>
+                                <span class="form-control boxChecked">B.<span id="selection2" class="boxChecked">Selection Content</span></span>
+                            </div>
     
-                <div class="card-header">
-                    <button class="btn-secondary col-sm-12 col-md-3" id="startYourQuiz">Online Code Quiz</button>
-                    <button class="btn-secondary col-sm-12 col-md-3" id="viewHighScores">Check Highest Scores</button>
-                    <button class="btn-secondary col-sm-12 col-md-3" id="contactMe">Scores</button>						
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" class="boxChecked" id="boxCheckedBox3">
+                                    </div>
+                                </div>
+                                <span class="form-control boxChecked">C.<span id="selection3" class="boxChecked">Selection Content</span></span>
+                            </div>
+    
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <input type="checkbox" class="boxChecked" id="boxCheckedBox4">
+                                    </div>
+                                </div>
+                                <span class="form-control boxChecked">D.<span id="selection4" class="boxChecked">Selection Content</span></span>
+                            </div>
+                            <div id = "msgDis"></div>
+                            <button href="#" class="btn btn-primary" id="nextQuestion">Next</button>
+                        </div>
+    
+                        <div class="card-body  text-center" id="scoreDisplay">
+                            <h2 class="card-title">Your Score is: <span id = "userScore"></span></h2>
+                            <p class="card-text">
+                                Please enter your name:
+                                <input type="text" id="nameUser" placeholder="Your name...">
+                                <button href="#" class="btn btn-primary" id="saveScore">Submit</button>
+                            </p>	
+                            <p class="card-text" id = "displayMsg">
+                            </p>					
+                            <button class="btn btn-primary" id="reStartQuiz">Start Quiz</button>
+                        </div>
+        
+                        <div class="card-body text-center" id = "highscoreDisp">
+                            <h2 class="card-title">View <span>Highest</span> Scores</h2>
+                            <p class="card-text">
+                                Your quiz score records will be saved here.
+                                <ol class = "col-12 highScoreList" id = "userScoreDisplay">
+                                    
+                                </ol>
+                                <button class="btn btn-primary" id="clear">Clear</button>							
+                            </p>
+                        </div>
+                    </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
+            </div>
+        </div>
 
     <!-- end of html CDN -->
-        <script src="./Assets/script.js"></script> 
+        <script src="./Assets/script.js"></script>
 <!-- jQuery CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
