@@ -308,3 +308,22 @@ function highToLow(){
 		scoreGet:scoreGet
 	}
 }
+//submit the score @ local
+function submitScore(){
+	var nameGet = JSON.parse(localStorage.getItem("name"));
+	var scoreGet = JSON.parse(localStorage.getItem("score"));
+	if(nameGet !== null){
+		var length = nameGet.length;
+		nameGet[length] = userName.value.trim();
+		scoreGet[length] = userScore;
+	}else{
+		nameGet = [];
+		scoreGet = [];
+		nameGet[0] = userName.value.trim();
+		scoreGet[0] = userScore;		
+	}
+	localStorage.setItem("name",JSON.stringify(nameGet));
+	localStorage.setItem("score",JSON.stringify(scoreGet));
+	userName.value = "";
+	submitMsg.textContent = "Scores successfully submitted !"
+}
