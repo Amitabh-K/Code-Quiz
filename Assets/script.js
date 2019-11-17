@@ -91,3 +91,44 @@ function timerDisplay(count){
 	timerCount.textContent = count;
 }
 
+//for timer display//for timer display//for timer display//for timer display//for timer display//for timer display//for timer display//for timer display//for timer display
+
+
+function questionDisplay(seq){
+	questionDisp.textContent = questionSelect(seq).question;
+	select1.textContent = questionSelect(seq).selection1;
+	select2.textContent = questionSelect(seq).selection2;
+	select3.textContent = questionSelect(seq).selection3;
+	select4.textContent = questionSelect(seq).selection4;
+}
+
+function random() {
+	var seq = ['0','1','2','3','4'];
+	var temp = 0;
+	var j= 0;
+
+    for (var i = seq.length - 1; i >= 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        temp = seq[i];
+        seq[i] = seq[j];
+        seq[j] = temp;
+	}
+	return seq;	
+}
+
+function questionSelect(number){
+	var question = quizSelect().question(number);
+	var selection = [
+		quizSelect().selection((number*4)),
+		quizSelect().selection((number*4+1)),
+		quizSelect().selection((number*4+2)),
+		quizSelect().selection((number*4+3))
+					];
+	return{
+		question:question,
+		selection1:selection[0],
+		selection2:selection[1],
+		selection3:selection[2],
+		selection4:selection[3]
+	}
+}

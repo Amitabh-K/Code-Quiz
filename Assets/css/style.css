@@ -60,6 +60,10 @@ li{
 	
 }
 
+span{
+	color:rgb(252, 181, 193);
+}
+
 #selection1,#selection2,#selection3,#selection4{
 	color:rgb(8, 0, 0);
 	font-size:1rem;
