@@ -184,3 +184,24 @@ function initNext(){
 	tempCheck = "";
 	count = 1;
 }
+
+function checkOptionChosen(boxId){
+	var opt;
+
+	console.log(boxId);
+	switch (boxId){
+		case "boxcheckedbox1":
+			opt = "a";
+			break;
+		case "boxcheckedbox2":
+			opt = "b";
+			break;
+		case "boxcheckedbox3":
+			opt = "c";
+			break;
+		case "boxcheckedbox4":
+			opt = "d";
+			break;
+	}
+	return opt;
+}
