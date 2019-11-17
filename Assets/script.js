@@ -256,3 +256,19 @@ function checkFourBox(e){
 	}
 	return check;
 }
+
+//choose the Quiz Set Option
+
+function quizSelect(){
+	var t = quizSetSelect.value.toLowerCase();
+	var select;
+	switch(t){
+		case "quiz set 1":
+		select = quizSet1;
+		break;
+		case "quiz set 2":
+		select = quizSet2;
+		break;
+	}
+	return select;
+}
