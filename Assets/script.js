@@ -205,3 +205,54 @@ function checkOptionChosen(boxId){
 	}
 	return opt;
 }
+
+//retrieving  answer
+
+function checkScore(boxId){
+	
+	boxId = boxId.toLowerCase();
+	var t = checkOptionChosen(boxId);
+	var flag = 0;
+	console.log(t);
+	var answer = quizSelect().answer(seq[questionCount-1]);
+	console.log(answer);
+	if(t === answer){
+
+		//increamnt in the  score
+		
+		msgDis.innerHTML = "Good job! you are right!!"
+		userScore++;
+		document.querySelector("#wrongAnswer").play();
+		flag = 1;
+	}
+	else{
+		
+		msgDis.innerHTML = "Sorry! Wrong Answer!"
+		countTimer = countTimer-10;//timer penalty
+		document.querySelector("#rightAnswer").play();
+		flag = 0;
+	}
+	// return userScore;
+
+	return flag;
+}
+
+function checkFourBox(e){
+	var check;
+	if(e.target.id === "boxCheckedBox1"){
+		check = true;
+	}
+	else if(e.target.id === "boxCheckedBox2"){
+		check = true;
+	}
+	else if(e.target.id === "boxCheckedBox3"){
+		check = true;
+	}
+	else if(e.target.id === "boxCheckedBox4"){
+		check = true;
+	}
+	else{
+		check = false;
+	}
+	return check;
+}
