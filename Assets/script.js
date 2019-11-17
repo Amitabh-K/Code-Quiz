@@ -272,3 +272,17 @@ function quizSelect(){
 	}
 	return select;
 }
+
+//Sort the score array
+function sortNum(a, b){
+	return b - a;
+}
+
+//get the index of the array
+function indexValue(arr1, a){
+	for(var i = 0; i<arr1.length; i++){
+		if(arr1[i] === a){
+			return i;
+		}
+	}
+}
