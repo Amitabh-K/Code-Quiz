@@ -86,8 +86,8 @@ function timer(){
 	},1000);
 }
 
-
 //for timer display
 function timerDisplay(count){
 	timerCount.textContent = count;
 }
+
