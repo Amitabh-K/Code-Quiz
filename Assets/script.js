@@ -308,7 +308,7 @@ function highToLow(){
 		scoreGet:scoreGet
 	}
 }
-//submit the score @ local
+//submit the score
 function submitScore(){
 	var nameGet = JSON.parse(localStorage.getItem("name"));
 	var scoreGet = JSON.parse(localStorage.getItem("score"));
@@ -325,5 +325,27 @@ function submitScore(){
 	localStorage.setItem("name",JSON.stringify(nameGet));
 	localStorage.setItem("score",JSON.stringify(scoreGet));
 	userName.value = "";
-	submitMsg.textContent = "Scores successfully submitted !"
+	submitMsg.textContent = "Score have been successfully submitted"
+}
+
+function getScores(){
+
+	var nameGet = highToLow().nameGet;
+	var scoreGet = highToLow().scoreGet;
+	var lis = document.getElementsByTagName("li").length;
+
+	userScoreDisplay.innerHTML = '';
+	
+	if(nameGet !== null){
+		for(var i = 0; i<nameGet.length; i++){
+			var nameli = document.createElement("li");
+			// var scoreli = document.createElement("li");
+
+			nameli.textContent = nameGet[i]+' '+scoreGet[i];
+			// scoreli.textContent = scoreGet[i];
+
+			userScoreDisplay.appendChild(nameli);
+			// userScoreDisplay.appendChild(scoreli);
+		}
+	}
 }
