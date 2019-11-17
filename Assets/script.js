@@ -286,3 +286,25 @@ function indexValue(arr1, a){
 		}
 	}
 }
+
+//this is to sort the scores from high to low
+function highToLow(){
+	var nameGet = JSON.parse(localStorage.getItem("name"));
+	var scoreGet = JSON.parse(localStorage.getItem("score"));
+	var scoreGet3 = JSON.parse(localStorage.getItem("score"));
+	var temp = [];
+
+	if(scoreGet !== null && nameGet !== null){
+		scoreGet2 = scoreGet.sort(sortNum);
+		for (var i = 0; i<nameGet.length; i++){
+
+			var j = indexValue(scoreGet3, scoreGet2[i]);
+			temp[i] = nameGet[j];
+		}
+	}
+
+	return {
+		nameGet:temp,
+		scoreGet:scoreGet
+	}
+}
