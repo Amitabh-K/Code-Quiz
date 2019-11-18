@@ -4,21 +4,18 @@ body{
     width:100%;
 	color:rgb(70, 66, 66);
     font-family: 'Georgia', Times, 'Times New Roman', serif;
-	background-image: url(../images/Card.png);
+	background-image: url(../images/atmosphere-background-bright-clouds-19670.jpg);
 	height:100%;
 }
 
-
 .marginTop{ 
-	margin-top:15%;
+	margin-top:10%;
 }
 
 .timer{
 	position:fixed;
 	top:2%;
-	right:5%;
-
-	
+	right:11%;	
 	padding:4px;	
 	background:rgb(238, 236, 236);
 	color:rgb(36, 2, 7);
@@ -33,13 +30,12 @@ body{
 	height:max-content;
 	border-radius: 3%/5%; 
 	box-shadow: 5px 5px 30px lightgray;
-	background-image:  url(../images/herringbone.png);;
+	background-image:  url(../images/atmosphere-background-bright-clouds-19670.jpg);;
 }
 
 .card-body{
 	padding:40px 20px;
 }
-
 
 #startQuiz,#reStartQuiz,#saveScore,.btn{
 	background-color:rgb(236, 227, 228);
@@ -112,8 +108,6 @@ span{
 .highScoreList li{
 	align-self: center;
 }
-
-
 
 @media screen and (max-width:767px){
 	.card-header{
