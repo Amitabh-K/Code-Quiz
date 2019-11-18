@@ -407,3 +407,38 @@ cardHeader.addEventListener("click",function(e){
 		}
 	}
 });
+
+//answering the question
+quizTestPage.addEventListener("click",function(e){	
+	var boxClicked = e.target.id;
+	if(countTimer>10 && questionCount<6){
+		if(checkFourBox(e) && countTimer >10){
+		checkBoxOne(e);		
+		setTimeout("nextQuestion()",1000);	
+		setTimeout("initNext()",1000);	
+		checkScore(boxClicked);		
+		}
+		else if (countTimer <= 10){
+			var flag = checkScore(boxClicked);
+			if(flag){
+				checkBoxOne(e);		
+				setTimeout("nextQuestion()",1000);	
+				setTimeout("initNext()",1000);	
+				checkScore(boxClicked);	
+			}
+			else{
+				checkBoxOne(e);	
+				checkScore(boxClicked);
+				userScoreDis.innerHTML = userScore;
+				ScorePage();
+				timerDisplay(0);
+			}
+		}
+	}
+	else{
+		userScoreDis.innerHTML = userScore;
+		ScorePage();
+		timerDisplay(0);
+	}	
+});
+
