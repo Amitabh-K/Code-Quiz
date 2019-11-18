@@ -4,12 +4,12 @@ body{
     width:100%;
 	color:rgb(70, 66, 66);
     font-family: 'Georgia', Times, 'Times New Roman', serif;
-	background-image: url(../images/herringbone.png);
+	background-image: url(../images/Card.png);
 	height:100%;
 }
 
 
-.marginTop{
+.marginTop{ 
 	margin-top:15%;
 }
 
