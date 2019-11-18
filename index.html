@@ -11,13 +11,14 @@
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 </head> 
 <body>  
-    <div class="timer"><span>Time Left: <span><span id="timerCount">0</span> Sec
-        </div>
-    <div class="container">    
-    </div>    
-        <div class="container">
-            <div class="row">
-                <div class="col encl">
+    <div>
+        <h1 class="card-title text-center mt-2 display-4">Coding Quiz JavaScript</h1>
+    <div class="timer"><span>Time Left:</span><span id="timerCount">0</span> Sec
+    </div>
+    
+        <div class="container ">
+            <div class="row ">
+                <div class="col encl mt-1 ">
                     <div class="card">
                         <div class="row">
                             <div class="card-header">
@@ -38,11 +39,11 @@
                                 <option id="quizSet2">Quiz set 2</option>							
                                 <!-- <option id="quizSet4">Quiz set 4</option> -->
                             </select>
-                            <button href="#" class="btn btn-primary mt-4" id="startQuiz">Start Quiz</button>
+                            <button  class="btn btn-primary mt-4" id="startQuiz">Start Quiz</button>
                         </div>
     
                         <div class="card-body  text-center" id="quizTest">
-                            <h2 class="card-title">Coding Quiz JavaScript</h2>
+                            
                             <p class="card-text" id="questionDisp">
                                 Choose the answers!
                             </p>
@@ -53,7 +54,7 @@
                                         <input type="checkbox" class="boxChecked" id="boxCheckedBox1">
                                     </div>
                                 </div>
-                                <span class="form-control boxChecked">A.<span id="selection1" class="boxChecked">Selection Content</span></span>
+                                <span class="form-control boxChecked text-left">A. <span id="selection1" class="boxChecked">Selection Content</span></span>
                             </div>    
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
@@ -61,7 +62,7 @@
                                         <input type="checkbox" class="boxChecked" id="boxCheckedBox2">
                                     </div>
                                 </div>
-                                <span class="form-control boxChecked">B.<span id="selection2" class="boxChecked">Selection Content</span></span>
+                                <span class="form-control boxChecked text-left">B. <span id="selection2" class="boxChecked">Selection Content</span></span>
                             </div>    
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
@@ -69,7 +70,7 @@
                                         <input type="checkbox" class="boxChecked" id="boxCheckedBox3">
                                     </div>
                                 </div>
-                                <span class="form-control boxChecked">C.<span id="selection3" class="boxChecked">Selection Content</span></span>
+                                <span class="form-control boxChecked text-left">C. <span id="selection3" class="boxChecked">Selection Content</span></span>
                             </div>    
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
@@ -77,10 +78,10 @@
                                         <input type="checkbox" class="boxChecked" id="boxCheckedBox4">
                                     </div>
                                 </div>
-                                <span class="form-control boxChecked">D.<span id="selection4" class="boxChecked">Selection Content</span></span>
+                                <span class="form-control boxChecked text-left">D. <span id="selection4" class="boxChecked">Selection Content</span></span>
                             </div>
                             <div id = "msgDis"></div>
-                            <button href="#" class="btn btn-primary mt-4" id="nextQuestion">Next</button>
+                            <button  class="btn btn-primary mt-4" id="nextQuestion">Next</button>
                         </div>
     
                         <div class="card-body  text-center" id="scoreDisplay">
@@ -88,7 +89,7 @@
                             <p class="card-text">
                                 Please enter your name:
                                 <input type="text" id="nameUser" placeholder="Your name...">
-                                <button href="#" class="btn btn-primary" id="saveScore">Submit</button>
+                                <button class="btn btn-primary" id="saveScore">Submit</button>
                             </p>	
                             <p class="card-text" id = "displayMsg">
                             </p>					
@@ -96,12 +97,12 @@
                         </div>        
                         <div class="card-body text-center" id = "highscoreDisp">
                             <h2 class="card-title">View <span>Highest</span> Scores</h2>
-                            <p class="card-text">
+                            <p class="card-text"> </p>
                                 Your quiz score records will be saved here.
                                 <ol class = "col-12 highScoreList" id = "userScoreDisplay">                                    
                                 </ol>
-                                <button class="btn btn-primary" id="clear">Clear</button>							
-                            </p>
+                                <button class="btn btn-primary" id="clear">Clear</button>						
+                            
                         </div>
                     </div>
                 </div>
@@ -110,7 +111,7 @@
 
     <!-- end of html CDN -->
         <script src="./Assets/script.js"></script>
-        <script type="text/javascript" src="./Assets/questions.js"></script>
+        <script src="./Assets/questions.js"></script>
 <!-- jQuery CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
