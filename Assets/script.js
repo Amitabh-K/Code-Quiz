@@ -375,3 +375,35 @@ btnNextQuestion.addEventListener("click",function(e){
 		timerDisplay(0);
 	}
 });
+
+//restart quiz button
+btnReStartQuiz.addEventListener("click",function(e){
+	location.reload();//use reload to initialize the page
+});
+
+//submit the score to local storage
+btnSubmit.addEventListener("click",submitScore);
+
+//clear button
+btnClear.addEventListener("click",function(){
+	userScoreDisplay.innerHTML = "";
+	localStorage.clear();
+});
+
+cardHeader.addEventListener("click",function(e){
+	console.log(e.target.getAttribute('id'));
+	var event = e.target;
+	var eventID = e.target.getAttribute('id');
+	if(event.tagName === "BUTTON"){
+		if(eventID === "startYourQuiz"){
+			location.reload();
+		}
+		else if (eventID === "viewHighScores"){
+			getScores();
+			highscorePage();
+		}
+		else if (eventID === "contactMe"){
+			contactPage();
+		}
+	}
+});
