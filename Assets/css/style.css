@@ -8,8 +8,8 @@ body{
 	height:100%;
 }
 
-.marginTop{ 
-	margin-top:10%;
+.encl{ 
+	margin-top:5%;
 }
 
 .timer{
@@ -19,7 +19,9 @@ body{
 	padding:4px;	
 	background:rgb(238, 236, 236);
 	color:rgb(36, 2, 7);
+	
 }
+
 
 .container .row{
 	margin-right:0px;
@@ -38,10 +40,11 @@ body{
 }
 
 #startQuiz,#reStartQuiz,#saveScore,.btn{
-	background-color:rgb(236, 227, 228);
-	border:1px solid rgb(167, 161, 162);
-	color:rgb(90, 88, 88);
-	box-shadow: 5px 5px 15px rgb(97, 85, 85);
+	background-color:#0000ff;
+	border:1px solid #0000ff;
+	color:white;
+	box-shadow: 5px 5px 15px rgb#00ff80;
+	border-radius:  10%;
 }
 
 .card-header{
@@ -72,8 +75,8 @@ span{
 }
 
 .btn-secondary{
-	background-color:rgb(133, 127, 127);
-	border:1px solid rgb(134, 129, 129);
+	background-color:#0000ff;
+	border:3px solid#0000ff;
 	color:white;
 	box-shadow: 5px 5px 10px rgb(66, 63, 63);
 	border-radius:3%/20%;
