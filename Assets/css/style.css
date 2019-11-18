@@ -41,7 +41,7 @@ body{
 
 #startQuiz,#reStartQuiz,#saveScore,.btn{
 	background-color:#0000ff;
-	border:1px solid #0000ff;
+	border:2px solid #0000ff;
 	color:white;
 	box-shadow: 5px 5px 15px rgb#00ff80;
 	border-radius:  10%;
@@ -76,7 +76,7 @@ span{
 
 .btn-secondary{
 	background-color:#0000ff;
-	border:3px solid#0000ff;
+	border:6px solid#0000ff;
 	color:white;
 	box-shadow: 5px 5px 10px rgb(66, 63, 63);
 	border-radius:3%/20%;
