@@ -53,8 +53,8 @@ h2{
 
 #startQuiz,#reStartQuiz,#saveScore,.btn{
 	background-color:#4aaaa5;;
-	border:1px solid #4aaaa5;;
-	color:rgb(90, 88, 88);
+	border:1px solid #4aaaa5;
+	color:rgb(39, 20, 20);
 	box-shadow: 5px 5px 15px rgb(122, 121, 121);
 }
 
@@ -82,11 +82,13 @@ li{
 }
 
 .btn-secondary{
-	background-color:#4aaaa5;
-	border:4px solid #4aaaa5	
-	box-shadow: 5px 5px 10px rgb(66, 63, 63);
+	background-color: #4aaaa5;
+	border:1px solid rgb(170, 194, 63);
+	color:white;
+	box-shadow: 5px 5px 10px rgb(73, 117, 121);
 	border-radius:3%/20%;
 	margin:5px 3px;
+	height: 100%;
 }
 
 .btn-secondary:hover{
