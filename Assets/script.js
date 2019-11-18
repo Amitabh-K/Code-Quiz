@@ -21,6 +21,7 @@ const quizSetSelect = document.querySelector("#quizSetSelect");
 const ifStartQuiz = document.querySelector("#startYourQuiz");
 const ifViewHighScores = document.querySelector("#viewHighScores");
 const questionDisp = document.querySelector("#questionDisp");
+const ifPortfolio = document.querySelector("#Portfolio");
 
 const select1 = document.querySelector("#selection1");
 const select2 = document.querySelector("#selection2");
@@ -402,8 +403,8 @@ cardHeader.addEventListener("click",function(e){
 			getScores();
 			highscorePage();
 		}
-		else if (eventID === "contactMe"){
-			contactPage();
+		else if (eventID === "portfolio"){
+			window.location.href = "./portfolio.html";
 		}
 	}
 });
@@ -441,4 +442,6 @@ quizTestPage.addEventListener("click",function(e){
 		timerDisplay(0);
 	}	
 });
+
+
 

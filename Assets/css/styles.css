@@ -1,0 +1,168 @@
+/* Common Styling of All Pages */
+
+ body {    
+    background-image: url(../images/herringbone.png);
+    border: darkgrey 1px solid;
+    
+      }
+      @media (min-width: 576px) {  
+        [class*="body"] {
+          border: hidden;       
+            } }
+
+/* Entire heading Styling including for navigation*/
+
+    @media (min-width: 576px) {  
+      [class*="h1"] {
+      width: 300;
+      align-self: flex-start;
+
+      }}
+
+    /* Styling name at header*/
+
+    @media (min-width: 576px) {  
+      [class*="masthead"] {   
+        background-color: #ffffff;
+        padding:0 2% 0 2%;
+            
+      } }
+
+      /*  header making heady stick*/
+
+    @media (min-width: 576px) {  
+      [class*="sticky-top"] {
+        display: flex;
+        justify-content: center;
+
+      }}
+
+/* Styling for navigatin as a whole*/
+
+
+
+  @media (min-width: 576px) {  
+    [class*="xbox"] {   
+    align-self: flex-end;    
+    } }
+
+  
+/* Styling for navigatin as a whole  */
+
+ @media (min-width: 576px) {  
+   [class*="ngroup"] {
+     display: flex;            
+     justify-content: space-between;      
+     margin-bottom: 0;
+ 
+ }    }
+ 
+ /* nav styling*/
+ 
+ @media (min-width: 768px) {  
+  [class*="ngroup"] {
+    display: flex;            
+    justify-content: space-between; 
+    width: 720px;
+    margin-bottom: 0;
+
+}    }  
+
+/* nav styling*/
+
+@media (min-width: 992px) {  
+  [class*="ngroup"] {
+    display: flex;            
+    justify-content: space-between; 
+    width: 960px;
+    margin-bottom: 0;
+
+}    } 
+
+
+
+ /* Sub-hearder styling  */
+
+.aboutme {    
+          color: #4aaaa5;
+          margin-top: auto;         
+          border-bottom: 2px solid #cccccc;     
+ }
+
+ /* Main content styling */
+    
+ /* Image styling for desktop*/
+
+ @media (min-width: 576px) {  
+  [class*="img"] {
+    box-sizing: 48px 48px;    
+    width: 150px;
+    height: 150px;    
+    float: left;
+    border: #cccccc; 
+}}
+ 
+
+/* main contant styling for desktop*/
+
+@media (min-width: 576) {  
+  [class*="container"] {
+    margin: 0;   
+    border: #cccccc;
+    
+}}
+
+/* main contant styling for small device*/
+
+ .container {  
+            margin: 0px auto;
+            line-height: 200%;
+            margin-top: 3%;
+            margin-bottom: 2%;            
+            }
+
+/* Contact styling */
+
+#message {
+  height: 185px;
+}
+
+/* Portfolio styling */
+
+/* main contant styling for small device*/
+.conitainer2 {
+  position: relative;
+  display: inline-block;
+  margin-left: auto 0;
+}
+/* main contant styling for small device*/
+
+.caption {
+  position: absolute;  
+  margin: 0 auto;
+  text-align: center;  
+  z-index: 1;  
+  background: #4aaaa5;
+  color: white;
+  width: 80%;  
+  left: 0;
+  right:0;
+  bottom: 15%;
+  height:35px;
+  font-weight: bold;
+  font-size: 1rem;
+  
+}
+/* main contant styling for small device*/
+
+.conitainer2 img {
+  width: 190px;
+  height: 200px;
+  float: left;
+  padding: 25px;
+  
+}
+
+
+
+
