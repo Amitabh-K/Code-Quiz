@@ -10,21 +10,23 @@
     <link rel="stylesheet" type="text/css" href="./Assets/css/style.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
 </head> 
-<body>  
-    <div>
-        <h1 class="card-title text-center mt-2 display-4">Coding Quiz JavaScript</h1>
+
+<body>
+
+    
+<h1 class="card-title text-center mt-2 display-4 bg-info">Coding Quiz JavaScript</h1>
     <div class="timer"><span>Time Left:</span><span id="timerCount">0</span> Sec
-    </div>    
+     </div>    
         <div class="container ">
             <div class="row ">
                 <div class="col encl mt-1 ">
                     <div class="card">
-                        <div class="row">
+                        <div class=" container row">
                             <div class="card-header">
                                 <button class="btn-primary col-sm-12 col-md-3" id="startYourQuiz">Start Quiz Page</button>
                                 <button class="btn-primary col-sm-12 col-md-3" id="viewHighScores">View Highest Scores</button>
                                 <button class="btn-primary col-sm-12 col-md-3" id="portfolio">Portfolio</button>	
-                                 </div>
+                            </div>
                         </div>
                         <div class="card-body  text-center" id="initial">
                             <h1 class="card-title font-weight-bold text-light ">Important Instructions!</h1>
@@ -45,9 +47,9 @@
                         <div class="card-body  text-center" id="quizTest">
                             <div class="container mb-3">
                                 <div class="container">
-                            <p class="card-text text-light" id="questionDisp">                                
-                            </div>
-                            </p>
+                                    <p class="card-text text-light" id="questionDisp">    
+                                </p>                            
+                            </div>                            
                              </div>
                             <div id = "quesExtraDisp"></div>
                             <div class="input-group mb-3">
@@ -100,15 +102,16 @@
                             <p class="card-text text-light"> </p>  These are the ones!!!                       
                                 <ol class = "col-12 highScoreList text-light" id = "userScoreDisplay">                                    
                                 </ol>
-                                <button class="btn btn-primary pb-2" id="clear">Clear</button>						
+                                <button class="btn btn-primary pb-2" id="clear">Clear</button>				
                             
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  
+        
 
-    <!-- end of html CDN -->
+    
         <script src="./Assets/script.js"></script>
         <script src="./Assets/questions.js"></script>
 <!-- jQuery CDN -->
@@ -116,5 +119,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <!-- Bootstrap JavaScript CDN -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    </body>
-    </html>       
+</body>
+</html>       
