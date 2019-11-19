@@ -65,7 +65,6 @@ function ScorePage(e){
 	initialPage.style.display = "none";
 	quizTestPage.style.display = "none";
 	scoreDisplayPage.style.display = "block";	
-	setTimeout(userName.focus(), 50);//doesnot work
 }
 
 // for view high score
@@ -103,16 +102,16 @@ function questionDisplay(seq){
 	select4.textContent = questionSelect(seq).selection4;
 }
 
-function random() {
+function shuffle() {
 	var seq = ['0','1','2','3','4'];
 	var temp = 0;
-	var j= 0;
+	var index= 0;
 
     for (var i = seq.length - 1; i >= 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
+        index = Math.floor(Math.random() * (i + 1));
         temp = seq[i];
-        seq[i] = seq[j];
-        seq[j] = temp;
+        seq[i] = seq[index];
+        seq[index] = temp;
 	}
 	return seq;	
 }
@@ -299,11 +298,10 @@ function highToLow(){
 		scoreGet2 = scoreGet.sort(sortNum);
 		for (var i = 0; i<nameGet.length; i++){
 
-			var j = indexValue(scoreGet3, scoreGet2[i]);
-			temp[i] = nameGet[j];
+			var index = indexValue(scoreGet3, scoreGet2[i]);
+			temp[i] = nameGet[index];
 		}
 	}
-
 	return {
 		nameGet:temp,
 		scoreGet:scoreGet
@@ -353,7 +351,7 @@ function getScores(){
 
 //for randoming the question / locating the question /only one box could be checked
 initPage();
-var seq = random();
+var seq = shuffle();
 var questionCount = 0;
 var count = 1;
 var tempCheck;
@@ -365,8 +363,8 @@ btnStartQuiz.addEventListener("click", quizPage);
 
 //next button
 btnNextQuestion.addEventListener("click",function(e){
-	countTimer -= 10;
-	if(countTimer>0 && questionCount<9){
+	countTimer -= 5;
+	if(countTimer>0 && questionCount<5){
 		nextQuestion();		
 		initNext();
 	}

@@ -14,8 +14,8 @@
 <body>
 
     
-<h1 class="card-title text-center mt-2 display-4 bg-info">Coding Quiz JavaScript</h1>
-    <div class="timer"><span>Time Left:</span><span id="timerCount">0</span> Sec
+<h1 class="text-center mt-2 display bg-warning">Quiz JavaScript</h1>
+    <div class="timer"><span>Time Left:</span><span id="timerCount">0</span> s
      </div>    
         <div class="container ">
             <div class="row ">
@@ -84,16 +84,16 @@
                                 </div>
                                 <span class="form-control boxChecked text-left">D. <span id="selection4" class="boxChecked">Selection Content</span></span>
                             </div>
-                            <div id = "msgDis"></div>
+                            <div class="text-light" id = "msgDis"></div>
                             <button  class="btn btn-primary mt-4" id="nextQuestion">Next</button>
                         </div>    
-                        <div class="card-body  text-center" id="scoreDisplay">
+                        <div class="card-body  text-center text-light " id="scoreDisplay">
                             <h2 class="card-title text-light">Your Score is: <span id = "userScore"></span></h2>
-                            <p class="card-text text-light">   Please enter your name:
+                            <p class="card-text text-light">   Enter your name here:
                                 <input type="text" id="nameUser" placeholder="John Smith...">
                                 <button class="btn btn-primary" id="saveScore">Submit</button>
                             </p>	
-                            <p class="card-text" id = "displayMsg">
+                            <p class="card-text pt-2 pb-3" id = "displayMsg">
                             </p>					
                             <button class="btn btn-primary" id="reStartQuiz">Start Quiz</button>
                         </div>        
