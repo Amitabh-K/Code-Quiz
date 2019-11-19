@@ -102,6 +102,8 @@ function questionDisplay(seq){
 	select4.textContent = questionSelect(seq).selection4;
 }
 
+// shuffling the array seq for randomisation of questions
+
 function shuffle() {
 	var seq = ['0','1','2','3','4'];
 	var temp = 0;
@@ -153,12 +155,13 @@ function checkBoxOne(e){
 	}
 }
 
+
+
+
 function nextQuestion(){
-	// quesExtraDisp.textContent = "";
-	if(questionCount<5){	
-		// countTimer -= 10;	
-		questionDisplay(seq[questionCount]);
-		// extraQuestionDisplay();
+	
+	if(questionCount<5){
+		questionDisplay(seq[questionCount]);	
 	}
 	else if (questionCount === 5){
 		if(userScore === 0){
@@ -222,14 +225,14 @@ function checkScore(boxId){
 		
 		msgDis.innerHTML = "Good job! you are right!!"
 		userScore++;
-		document.querySelector("#wrongAnswer").play();
+		document.querySelector("#rightAnswer").play();
 		flag = 1;
 	}
 	else{
 		
 		msgDis.innerHTML = "Sorry! Wrong Answer!"
 		countTimer = countTimer-10;//timer penalty
-		document.querySelector("#rightAnswer").play();
+		document.querySelector("#wrongAnswer").play();
 		flag = 0;
 	}
 	// return userScore;

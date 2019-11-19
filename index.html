@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Code-Quiz></title>    
+        <title>Code-Quiz by Amitabh Kumar></title>    
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3e9d289ac8.js" crossorigin="anonymous"></script>    
@@ -12,22 +12,24 @@
 </head> 
 
 <body>
-
-    
-<h1 class="text-center mt-2 display bg-warning">Quiz JavaScript</h1>
+      <!--  Hedding for the code quiz-->
+            <h1 class="text-center mt-2 display bg-warning">Code Quiz JavaScript</h1>
+          <!--  time-keeper-->
     <div class="timer"><span>Time Left:</span><span id="timerCount">0</span> s
      </div>    
         <div class="container ">
             <div class="row ">
                 <div class="col encl mt-1 ">
                     <div class="card">
-                        <div class=" container row">
+                        <div class=" container row d-flex">
                             <div class="card-header">
                                 <button class="btn-primary col-sm-12 col-md-3" id="startYourQuiz">Start Quiz Page</button>
                                 <button class="btn-primary col-sm-12 col-md-3" id="viewHighScores">View Highest Scores</button>
                                 <button class="btn-primary col-sm-12 col-md-3" id="portfolio">Portfolio</button>	
                             </div>
                         </div>
+
+                        <!--  Instructions adn rules of the qz-->
                         <div class="card-body  text-center" id="initial">
                             <h1 class="card-title font-weight-bold text-light ">Important Instructions!</h1>
                            <div class="container m-2">
@@ -35,23 +37,29 @@
                                 Try to answer the questions within the time limit.<br>
                                 <br>Please keep in mind that incorrect answers will deduct time by ten seconds!
                             </p>
+                         
+                            <!--  set of questions to choose before the quiz-->
                         </div>
                             <select class="form-control form-control-sm" id="quizSetSelect">
                                 <option id="quizSet1">Quiz set 1</option>
                                 <option id="quizSet2">Quiz set 2</option>							
-                                <!-- <option id="quizSet4">Quiz set 4</option> -->
+                               
+
                             </select>
                             <button  class="btn btn-primary mt-4" id="startQuiz">Start Quiz</button>
                         </div>
-    
+                    <!--  Questions display once quiz begins  and till it ends-->
+
                         <div class="card-body  text-center" id="quizTest">
                             <div class="container mb-3">
                                 <div class="container">
                                     <p class="card-text text-light" id="questionDisp">    
                                 </p>                            
                             </div>                            
-                             </div>
-                            <div id = "quesExtraDisp"></div>
+                             </div>       
+
+                          <!--  Choices display once quiz begins  and till it ends-->
+
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
@@ -86,7 +94,10 @@
                             </div>
                             <div class="text-light" id = "msgDis"></div>
                             <button  class="btn btn-primary mt-4" id="nextQuestion">Next</button>
-                        </div>    
+                        </div> 
+                        
+                       <!--  ScoreDisplay after the quiz page -->
+
                         <div class="card-body  text-center text-light " id="scoreDisplay">
                             <h2 class="card-title text-light">Your Score is: <span id = "userScore"></span></h2>
                             <p class="card-text text-light">   Enter your name here:
@@ -96,24 +107,34 @@
                             <p class="card-text pt-2 pb-3" id = "displayMsg">
                             </p>					
                             <button class="btn btn-primary" id="reStartQuiz">Start Quiz</button>
-                        </div>        
+                        </div>     
+                        
+                        <!--  View Highest Scores page -->
+
                         <div class="card-body text-center text-light" id = "highscoreDisp">
                             <h2 class="card-title text-light">View Highest Scores</h2>
                             <p class="card-text text-light"> </p>  These are the ones!!!                       
                                 <ol class = "col-12 highScoreList text-light" id = "userScoreDisplay">                                    
                                 </ol>
-                                <button class="btn btn-primary pb-2" id="clear">Clear</button>				
-                            
+                                <button class="btn btn-primary pb-2" id="clear">Clear</button>                           
                         </div>
                     </div>
                 </div>
             </div>
         </div>  
         
-
+    </div>  
+    <!-- Footer section structure -->
+        <div class="footer fixed-bottom text-white bg-secondary text-center small p-3">        
+          Copyright © 2019  
+        </div>
     
         <script src="./Assets/script.js"></script>
         <script src="./Assets/questions.js"></script>
+
+        <audio id = "rightAnswer" src="./Assets/audio/Voice 017_sd.m4a"></audio>
+        <audio id = "wrongAnswer" src="./Assets/audio/Voice 016_sd.m4a"></audio>
+
 <!-- jQuery CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
