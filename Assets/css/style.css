@@ -17,6 +17,9 @@ h2{
 }
 
 
+
+
+
 .encl{
 	margin-top:10%;
 }
@@ -72,8 +75,9 @@ text-emphasis-color: red;
 }
 
 li{
-	font-size:20px;
-	color:rgb(15, 10, 8);
+	font-size:1rem;
+	color:cornsilk;
+	margin: 1%;
 	
 }
 
