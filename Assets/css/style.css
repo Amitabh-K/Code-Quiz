@@ -83,7 +83,7 @@ li{
 
 #selection1,#selection2,#selection3,#selection4{
 	color:black;
-	font-size:1rem;
+	font: size 0.8;rem;
 	font-weight:16px;
 }
 
