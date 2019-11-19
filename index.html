@@ -14,8 +14,7 @@
     <div>
         <h1 class="card-title text-center mt-2 display-4">Coding Quiz JavaScript</h1>
     <div class="timer"><span>Time Left:</span><span id="timerCount">0</span> Sec
-    </div>
-    
+    </div>    
         <div class="container ">
             <div class="row ">
                 <div class="col encl mt-1 ">
@@ -28,9 +27,9 @@
                                  </div>
                         </div>
                         <div class="card-body  text-center" id="initial">
-                            <h1 class="card-title font-weight-bold ">Important Instructions!</h1>
+                            <h1 class="card-title font-weight-bold text-light ">Important Instructions!</h1>
                            <div class="container m-2">
-                            <p class="card-text m-2">
+                            <p class="card-text m-2 text-light">
                                 Try to answer the questions within the time limit.<br>
                                 <br>Please keep in mind that incorrect answers will deduct time by ten seconds!
                             </p>
@@ -46,8 +45,7 @@
                         <div class="card-body  text-center" id="quizTest">
                             <div class="container mb-3">
                                 <div class="container">
-                            <p class="card-text" id="questionDisp">
-                                Choose the answers!
+                            <p class="card-text text-light" id="questionDisp">                                
                             </div>
                             </p>
                              </div>
@@ -92,17 +90,16 @@
                             <h2 class="card-title">Your Score is: <span id = "userScore"></span></h2>
                             <p class="card-text">
                                 Please enter your name:
-                                <input type="text" id="nameUser" placeholder="Your name...">
+                                <input type="text" id="nameUser" placeholder="Plaese mention your name...">
                                 <button class="btn btn-primary" id="saveScore">Submit</button>
                             </p>	
                             <p class="card-text" id = "displayMsg">
                             </p>					
                             <button class="btn btn-primary" id="reStartQuiz">Start Quiz</button>
                         </div>        
-                        <div class="card-body text-center" id = "highscoreDisp">
+                        <div class="card-body text-center text-light" id = "highscoreDisp">
                             <h2 class="card-title">View <span>Highest</span> Scores</h2>
-                            <p class="card-text"> </p>
-                                Your quiz score records will be saved here.
+                            <p class="card-text"> </p>  All the best!                            
                                 <ol class = "col-12 highScoreList" id = "userScoreDisplay">                                    
                                 </ol>
                                 <button class="btn btn-primary" id="clear">Clear</button>						

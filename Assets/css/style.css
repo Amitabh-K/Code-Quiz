@@ -5,8 +5,7 @@ html{
 body{
     margin:0px;
     padding:0px;
-    width:100%;
-	color:rgb(10, 9, 9);
+    width:100%;	
     font-family: sans-serif;
 	background-image: url(../images/atmosphere-background-bright-clouds-19670.jpg);
 	height:100%;
@@ -42,7 +41,7 @@ h2{
 	height:max-content;
 	border-radius: 3%/5%; 
 	box-shadow: 5px 5px 30px lightgray;
-	background-image: url(../images/main.jfif
+	background-image: url(../images/main.jfif)
 }
 
 .card-body{
@@ -85,7 +84,7 @@ li{
 }
 
 .input-group{
-	width:250px;
+	width:260px;
 	margin:auto;
 }
 
