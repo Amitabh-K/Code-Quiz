@@ -363,6 +363,7 @@ var countTimer = 60;
 //press the button to begin the test
 btnStartQuiz.addEventListener("click", quizPage);
 
+
 //next button
 btnNextQuestion.addEventListener("click",function(e){
 	countTimer -= 5;
@@ -379,7 +380,7 @@ btnNextQuestion.addEventListener("click",function(e){
 
 //restart quiz button
 btnReStartQuiz.addEventListener("click",function(e){
-	location.reload();//use reload to initialize the page
+	location.reload();
 });
 
 //submit the score to local storage
@@ -407,6 +408,7 @@ cardHeader.addEventListener("click",function(e){
 			window.location.href = "./portfolio.html";
 		}
 	}
+	document.querySelector("#startQuiz").play();
 });
 
 //answering the question
@@ -442,6 +444,7 @@ quizTestPage.addEventListener("click",function(e){
 		timerDisplay(0);
 	}	
 });
+
 
 
 
