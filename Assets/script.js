@@ -157,7 +157,6 @@ function checkBoxOne(e){
 
 
 
-
 function nextQuestion(){
 	
 	if(questionCount<5){

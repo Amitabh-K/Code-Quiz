@@ -39,10 +39,10 @@ h2{
 }
 
 hr {
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	border: 1px;
-	border-top: 10px solid rgba(44, 34, 1, 0.1);
+	margin-top: 0rem;
+	margin-bottom: 0.75rem;
+	border: 0.5px;
+	border-top: 5px solid rgba(44, 34, 1, 0.1);
   }
 
 .container .row{
