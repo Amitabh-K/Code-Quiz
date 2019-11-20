@@ -3,6 +3,10 @@
  body {    
     background-image: url(../images/herringbone.png);
     border: darkgrey 1px solid;
+    transform: scale(.8);
+    
+   
+
     
       }
       @media (min-width: 576px) {  
