@@ -230,7 +230,7 @@ function checkScore(boxId){
 	else{
 		
 		msgDis.innerHTML = "Sorry! Wrong Answer!"
-		countTimer = countTimer-10;//timer penalty
+		countTimer = countTimer-12;//timer penalty
 		document.querySelector("#wrongAnswer").play();
 		flag = 0;
 	}

@@ -5,16 +5,14 @@ html{
 body{
     margin:0px;
     padding:0px;
-    width:100%;	
-    font-family: sans-serif;
+    
+    font-family: 16px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 	background-image: url(../images/atmosphere-background-bright-clouds-19670.jpg);
-	height:100%;
+	
 }
 
 
-.display{
-font-size: 3rem;
-}
+
 
 h2{
 	
@@ -48,8 +46,7 @@ hr {
 .container .row{
 	margin-right:0px;
 	margin-left:0px;
-	display: flex;
-	flex-wrap: wrap;
+	
 }
 
 .card{
@@ -63,9 +60,7 @@ hr {
 	padding:40px 20px;
 }
 
-#contactPage{
-	padding:40px auto;
-}
+
 
 #startQuiz,#reStartQuiz,#saveScore,.btn{
 	background-color:#4aaaa5;;
@@ -76,6 +71,7 @@ hr {
 
 .card-header{
 	display:flex;
+	flex-wrap: wrap;
 	justify-content:space-evenly;
 	flex:1;
 	
@@ -97,14 +93,29 @@ li{
 
 #selection1,#selection2,#selection3,#selection4{
 	color:black;
-	font: size 0.8;rem;
-	font-weight:16px;
+	font: size 1rem;
+	
 }
 
 .input-group{
 	width:260px;
 	margin:auto;
 }
+
+
+.boxh{
+
+background-color: #385998;
+font: 2rem -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+}
+
+h1{
+font-size: 1.5rem;
+border-bottom: orangered 2px solid;
+
+}
+
 
 .btn-primary{
 	background-color: #060ae7;
@@ -114,7 +125,8 @@ li{
 	border-radius:3%/20%;
 	margin:5px 3px;
 	height: 90%;
-	
+	font-size: 1.2rem;
+
 	
 }
 
@@ -126,6 +138,7 @@ li{
 .btn-primary:focus{
 	background-color:rgb(1, 6, 24);
 	border:1px solid rgb(0, 8, 7);
+	flex-wrap: wrap;
 }
 
 
@@ -153,4 +166,9 @@ margin-top: 6%;
 	.card-header{
 		display:block;
 	}
+}
+
+#quizTest{
+
+font-size:1.2rem;	
 }
