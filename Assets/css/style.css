@@ -21,6 +21,48 @@ body{
 }
 
 
+@media screen and (min-width:767){
+	.timer{
+	
+		float: right;	
+		margin-right: 5%;	
+		padding:6px;
+		border-radius:15%;	
+		background:white;
+		color:#010c0b;;
+		font-weight: bold;
+		
+	}
+}
+
+
+@media screen and (min-width:576px){
+	.timer{
+	
+		float: right;	
+		margin-right: 5%;	
+		padding:6px;
+		border-radius:15%;	
+		background:white;
+		color:#010c0b;;
+		font-weight: bold;
+		
+	}
+}
+
+
+	.timer{
+	
+		float: right;	
+		margin-right: 1%;			
+		background:white;
+		color:#010c0b;;
+		font-weight: bold;
+		
+		
+	}
+
+
 hr {
 	margin-top: 0rem;	
 	border: 0.5px;
@@ -38,48 +80,6 @@ h2{
 	
 	font-size: 2rem;
 }
-
-
-
-
-@media screen and (min-width:767){
-	.timer{
-	
-		float: right;	
-		margin-right: 5%;	
-		padding:6px;
-		border-radius:15%;	
-		background:white;
-		color:#010c0b;;
-		font-weight: bold;
-	}
-}
-
-
-@media screen and (min-width:576px){
-	.timer{
-	
-		float: right;	
-		margin-right: 5%;	
-		padding:6px;
-		border-radius:15%;	
-		background:white;
-		color:#010c0b;;
-		font-weight: bold;
-	}
-}
-
-
-	.timer{
-	
-		float: right;	
-		margin-right: 2%;	
-		
-		border-radius:15%;	
-		background:white;
-		color:#010c0b;;
-		font-weight: bold;
-	}
 
 
 .card{
@@ -137,10 +137,24 @@ li{
 
 .boxh{
 
-background-color: #385998;
-font: 2rem -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	background-color: #385998;
+	font: 1.5rem -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+	
+	}
 
-}
+
+
+	@media screen and (min-width:767){
+		.boxh{
+
+			background-color: #385998;
+			font: 2rem -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+			
+			}
+	}
+/*
+
+*/
 
 h1{
 font-size: 1.5rem;
