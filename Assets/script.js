@@ -326,7 +326,7 @@ function submitScore(){
 	localStorage.setItem("name",JSON.stringify(nameGet));
 	localStorage.setItem("score",JSON.stringify(scoreGet));
 	userName.value = "";
-	submitMsg.textContent = "Score have been successfully submitted"
+	submitMsg.textContent = "Score has been submitted successfully"
 }
 
 function getScores(){
