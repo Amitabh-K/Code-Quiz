@@ -3,7 +3,7 @@
  body {    
     background-image: url(../images/herringbone.png);
     border: darkgrey 1px solid;
-    transform: scale(.8);
+    transform: scale();
     
    
 
@@ -13,6 +13,8 @@
         [class*="body"] {
           border: hidden;       
             } }
+
+            
 
 /* Entire heading Styling including for navigation*/
 
