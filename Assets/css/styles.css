@@ -142,8 +142,8 @@
   margin: 0 auto;
   text-align: center;  
   z-index: 1;  
-  
-  
+  background: #ffffff;
+  color: #385998;
   text-decoration: none;
   width: 80%;  
   left: 0;

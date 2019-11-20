@@ -12,14 +12,10 @@ body{
 }
 
 
-
-
 h2{
 	
 	font-size: 2rem;
 }
-
-
 
 .encl{
 	margin-top:10%;
@@ -59,7 +55,6 @@ hr {
 .card-body{
 	padding:40px 20px;
 }
-
 
 
 #startQuiz,#reStartQuiz,#saveScore,.btn{
