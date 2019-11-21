@@ -60,7 +60,7 @@ var answerSet1 = [
 var questionSet2 = [
 		"The _______ method of an Array object adds and/or removes elements from an array.",
 		"How to write an ‘if’ statement for executing some code.If “i” is NOT equal to 5?",
-		"To set up the window to capture all Click events, we use which of the following statement?",						
+		"Which of the following is not a valid JavaScript variable name?",						
 		"What is the JavaScript syntax for printing values in Console?",						
 		"What is the method in JavaScript used to remove the whitespace at the beginning and end of any string ?"
 ];
@@ -68,7 +68,7 @@ var questionSet2 = [
 var selectionSet2 = [
 	"Reverse","Shift","Slice","Splice",
 	"if(i<>5)","if i<>5","if(i!=5)","if i!=5",
-	"window.captureEvents(Event.CLICK)","window.handleEvents (Event.CLICK)","window.routeEvents(Event.CLICK )","window.raiseEvents(Event.CLICK )",					
+	"2names","_first_and_last_names","FirstAndLast","None of the above)",					
 	"print(5)"," console.log(5);"," console.print(5);","print.console(5);",					
 	"strip()","trim()","stripped()","trimmed()"
 ];
